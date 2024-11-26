@@ -1,14 +1,14 @@
-:root {
 
+:root {
     /* Original Palette */
-    --dark-gray: #264653;
-    --light-green: #2a9d8f;
-    --khaki: #e9c46a;
-    --sandy-brown: #f4a261;
-    --coral: #e76f51;
+    --dark-green: #4a7c59;
+    --greensea: #8fc0a9;
+    --light-blue: #68b0ab;
+    --beige: #c8d5b9;
+    --selection-color: #06bce14d;
 
     /* Additional colors */
-    --white: #ffff;
+    --white: #faf3dd;
     --light-gray: #adb5bd;
     --khaki-hover: #dfb959;
 
@@ -16,13 +16,33 @@
     --shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
+
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
+.text-beige {
+    color: var(--beige);
+}
+.text-dark-green {
+    color: var(--dark-green);
+}
+
+.bg-dark-green{
+    background-color: var(--dark-green);
+}
+.bg-greensea{
+    background-color: var(--greensea);
+}
+.bg-light-blue{
+    background-color: var(--light-blue);
+}
+.bg-beige{
+    background-color: var(--beige);
+}
+
+
+/* TODO: Da cambiare */
 ::selection {
-    background-color: #24837871;
+    background-color: var(--beige);
 }

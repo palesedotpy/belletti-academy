@@ -1,0 +1,55 @@
+
+body {
+    
+}
+
+.btn-beige {
+    background-color: var(--beige);
+}
+.btn-beige:hover {
+    color: var(--beige);
+    border: 1px solid var(--beige);
+}
+
+.navbar-brand:hover {
+    color: var(--beige);
+}
+.navbar-brand:focus {
+    color: var(--beige);
+}
+
+.nav-link-header {
+    background: 
+        linear-gradient(currentColor 0 0) 
+        7px 90% /var(--d, 0) 2px
+      no-repeat;
+    transition:0.5s;
+  }
+.nav-link-header:hover {
+    color: var(--beige); 
+    --d: 90%;
+}
+
+.full-width {
+    min-width: 100vw;
+    max-height: 10vh;
+    padding: 0;
+}
+
+.intro-slide {
+    background-image: url("../img/index-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:scroll;
+    background-size: cover;
+
+    min-height: 50vh; 
+    min-width: 50vw;
+
+    height: 92vh;
+
+}
+
+.blockk {
+    background-color: red;
+}
