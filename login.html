@@ -8,13 +8,17 @@
         <link rel="stylesheet" href="style/global.css">
     </head>
     <body>
-        <form class="container-login" action="php/login.php" method="post">
+        <!-- <form class="container-login" action="php/login.php" method="post"> -->
+        <div class="container-login" >
             <h2>Login Page</h2>
-            <input type="text" name="username" placeholder="Username" required> <br>
-            <input type="password" name="password" placeholder="Password" required> <br>
+            <input type="text" name="username" id="username" placeholder="Username" required> <br>
+            <input type="password" name="password" id="password" placeholder="Password" required> <br>
             <div class="container-submit">
-                <input type="submit" class="submit-button" name="login" value="LOGIN">
+                <input type="submit" class="submit-button" name="login" id="login" value="LOGIN">
             </div>
-        </form>
+        <!-- </form> -->
+        </div>
+
+        <script src="js/login.js"></script>
     </body>
 </html>

@@ -1,11 +1,9 @@
 
-body {
-    
+html {
+    scroll-behavior: smooth;
 }
 
-.btn-beige {
-    background-color: var(--beige);
-}
+
 .btn-beige:hover {
     color: var(--beige);
     border: 1px solid var(--beige);
@@ -18,6 +16,7 @@ body {
     color: var(--beige);
 }
 
+/* Sottolineamento dinamico dei link */
 .nav-link-header {
     background: 
         linear-gradient(currentColor 0 0) 
@@ -30,14 +29,15 @@ body {
     --d: 90%;
 }
 
-.full-width {
-    min-width: 100vw;
-    max-height: 10vh;
-    padding: 0;
+.logo {
+    
 }
 
+/* Contenitore con immagine principale */
 .intro-slide {
-    background-image: url("../img/index-background.jpg");
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url("../img/index-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:scroll;
@@ -46,10 +46,9 @@ body {
     min-height: 50vh; 
     min-width: 50vw;
 
-    height: 92vh;
-
+    min-height: 100vh;
 }
 
-.blockk {
-    background-color: red;
+.introduzione {
+    height: 600px;
 }

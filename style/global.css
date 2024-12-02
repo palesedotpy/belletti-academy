@@ -17,7 +17,7 @@
 }
 
 
-body {
+* {
     font-family: 'Raleway', sans-serif;
 }
 
@@ -39,6 +39,14 @@ body {
 }
 .bg-beige{
     background-color: var(--beige);
+}
+
+.btn-beige {
+    background-color: var(--beige);
+}
+.btn-beige:hover {
+    color: var(--beige);
+    border: 1px solid var(--beige);
 }
 
 
