@@ -15,63 +15,342 @@
         <link rel="stylesheet" href="style/index.css"> 
     </head>
     <body>
-        <!-- Scheda iniziale -->
-        <div class="intro-slide">
-            <!-- Header che verrà -->
-            <nav class="navbar navbar-expand-md bg-dark-green fixed-top">
-                <div class="container-sm">
-                    <!-- Nome sito -->
-                    <a href="#" class="navbar-brand fs-2 fw-bold text-beige">NOME</a>
-                    <!-- Hamnurger menu -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-header text-beige" href="#">Link 1</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-header text-beige" href="#">Link 2</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-header text-beige" href="#">Link 3</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fw-bold nav-link-header text-beige" href="#">Contatti</a>
-                            </li>
-                        </ul>
-                        <div class="d-flex gap-2">
-                            <a href="login.html" class="fw-bold btn btn-beige text-dark-green bg-beige shadow p-2 rounded">Login</a>
-                            <a href="signup.html" class="fw-bold btn btn-beige text-dark-green bg-beige shadow p-2 rounded">Sign Up</a>
-                        </div>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md bg-dark-green fixed-top">
+            <div class="container-sm">
+                <!-- Nome sito -->
+                <a href="index.html" class="navbar-brand fs-2 fw-bold text-beige">Belletti Academy</a>
+                <!-- Hamburger menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-header text-beige" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-header text-beige" href="corsi.html">Corsi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-header text-beige" href="#">Attività</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold nav-link-header text-beige" href="#">Contatti</a>
+                        </li>
+                    </ul>
+                    <div class="account-container d-flex gap-2">
+                        <a href="login.html" class="fw-bold btn btn-beige text-dark-green bg-beige shadow p-2 rounded">Login</a>
+                        <a href="signup.html" class="fw-bold btn btn-beige text-dark-green bg-beige shadow p-2 rounded">Sign Up</a>
                     </div>
                 </div>
-            </nav>
-
-            <!-- Informazioni centrali (Logo e nome) -->
-            <div class="position-absolute top-50 start-50 translate-middle ">
-                <div class="text-center">
-                    <img class="img-fluid" src="img/lotus.png" alt="">
-                    <p class="fs-1 text-beige">Belletti Academy</p>
-                </div>
-                <div class="text-center">
-                    <a href="#contenitore-introduzione" class="fw-bold btn btn-lg btn-beige">Chi siamo</a>
+            </div>
+        </nav>
+        <div class="intro container-fluid vh-100" id="intro">
+            <div class="row h-100">
+                <div class="col d-flex justify-content-center align-items-center flex-column gap-5">
+                    <p class="title text-dark-green highlighted-text">Belletti Academy</p>
+                    <p class="h3 text-dark-green">
+                        Dove Tradizione e Innovazione si Incontrano per il Benessere del Corpo e della Mente
+                    </p>
+                    <a 
+                        href="#introduzione" 
+                        class="fs-2 btn btn-beige text-dark-green bg-beige shadow p-2 rounded px-5">
+                        Chi siamo
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="introduzione" id="contenitore-introduzione">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore voluptate necessitatibus quam laborum sapiente itaque accusantium inventore adipisci tempora aliquid. Sapiente nesciunt, natus vero placeat non est perspiciatis dolores, quam hic ducimus fuga error mollitia quidem voluptatum quod autem pariatur modi architecto, recusandae doloremque asperiores! Nobis suscipit fuga in repudiandae molestiae eum iusto delectus doloremque, harum, quod reiciendis dignissimos! Fuga eveniet nam eaque similique aperiam quod omnis deleniti beatae et aliquam tenetur, minus temporibus ullam neque incidunt praesentium sint quibusdam veritatis eius itaque! Maiores nesciunt error cum perspiciatis, quisquam fuga impedit facere illum quae dolorem dolorum optio reiciendis? Eaque, provident!
+        <!-- Missione e contattaci -->
+        <div class="container-fluid text-dark-green border p-4" id="introduzione">
+            <div class="row mx-5">
+                <div class="col-12 col-sm-6">
+                    <div class="d-flex flex-column gap-5 justify-content-center h-100">
+                        <div id="missione">
+                            <p class="fs-1 text-center">
+                                <strong>LA NOSTRA MISSIONE</strong>
+                            </p>
+                            <p class="fs-5">
+                                La <em><strong>Belletti Academy</strong></em> si impegna a formare operatori olistici di <strong>alto livello</strong>, 
+                                capaci di operare a 360 gradi. 
+                                L'obiettivo è preparare professionisti <strong>competenti</strong> e <strong>motivati</strong>, 
+                                in grado di rispondere alle <em>esigenze di centri olistici</em>, <em>spa</em> e <em>centri medici</em>, 
+                                oltre a <strong>soddisfare la curiosità</strong> di chi desidera apprendere tecniche di guarigione 
+                                antiche a livello amatoriale.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center flex-column p-5"> 
+                    <!-- <img src="https://placehold.co/400x600" alt=""> -->
+                    <div class="h3">
+                        <p>CONTATTACI</p>
+                    </div>
+                    <form class="float-left w-50">
+                        <div class="mb-3">
+                            <label for="inputNome">Nome</label>
+                            <input type="text" class="form-control" id="inputNome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputTelefono">Telefono</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="em" class="form-label" id="inputEmail">Email</label>
+                            <input type="text" class="form-control" id="inputEmail">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" class="btn btn-beige text-dark-green "><strong>Invia</strong></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
 
-        <div class="">
-
+        <!-- I nostri insegnanti -->
+        <div class="insegnanti d-flex align-items-center justify-content-center flex-column" id="insegnanti">
+            <div class="titolo">
+                <p class="fs-2">I NOSTRI INSEGNANTI</p>
+            </div>
+            <div class="cardsInsegnanti container-fluid border">
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <div class="card card-dimension">
+                            <img src="https://placehold.co/10x10">
+                            <div class="card-body">
+                                <h5 class="card-title">Insegnante</h5>
+                                <p class="card-text">Testo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="card card-dimension">
+                            <img src="https://placehold.co/10x10">
+                            <div class="card-body">
+                                <h5 class="card-title">Insegnante</h5>
+                                <p class="card-text">Testo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="card card-dimension">
+                            <img src="https://placehold.co/10x10">
+                            <div class="card-body">
+                                <h5 class="card-title">Insegnante</h5>
+                                <p class="card-text">Testo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+     
+ 
+        <footer
+            class="text-center text-lg-start text-white mt-5"
+            style="background-color: #3e4551"
+            >
+            <!-- Grid container -->
+            <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">FOOTER CONTENT</h5>
 
+                    <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae modi cum ipsam ad, illo possimus laborum ut
+                    reiciendis obcaecati. Ducimus, quas. Corrupti, pariatur eaque?
+                    Reiciendis assumenda iusto sapiente inventore animi?
+                    </p>
+                </div>
+                <!--Grid column-->
 
-        
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 3</a>
+                    </li>
+                    <li>
+                        <a href="#!" class="text-white">Link 4</a>
+                    </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="mb-4" />
+
+            <!-- Section: CTA -->
+            <section class="">
+                <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Register for free</span>
+                <button type="button" class="btn btn-outline-light btn-rounded">
+                    Sign up!
+                </button>
+                </p>
+            </section>
+            <!-- Section: CTA -->
+
+            <hr class="mb-4" />
+
+            <!-- Section: Social media -->
+            <section class="mb-4 text-center">
+                <!-- Facebook -->
+                <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-linkedin-in"></i
+                ></a>
+
+                <!-- Github -->
+                <a
+                class="btn btn-outline-light btn-floating m-1"
+                href="#!"
+                role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+            </section>
+            <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div
+                class="text-center p-3"
+                style="background-color: rgba(0, 0, 0, 0.2)"
+                >
+            <a class="text-white" href="#intro"
+                >Belletti Academy</a
+                >
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+       
+
+        <script> 
+            document.addEventListener("DOMContentLoaded", function() { 
+                var fixedTopHeight = document.querySelector('.fixed-top').offsetHeight; 
+                document.querySelector('.intro').style.paddingTop = fixedTopHeight + 'px'; 
+            }); 
+        </script>
+        <script 
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+            crossorigin="anonymous">
+        </script>
+    </body> 
 </html>

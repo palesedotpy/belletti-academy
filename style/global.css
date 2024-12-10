@@ -49,8 +49,13 @@
     border: 1px solid var(--beige);
 }
 
+.border-beige {
+    border: 1px solid var(--beige);
+}
+
+
 
 /* TODO: Da cambiare */
 ::selection {
-    background-color: var(--beige);
+    background-color: var(--selection-color);
 }

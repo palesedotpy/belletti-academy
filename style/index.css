@@ -4,9 +4,12 @@ html {
 }
 
 
-.btn-beige:hover {
+.account-container > .btn-beige:hover {
     color: var(--beige);
     border: 1px solid var(--beige);
+}
+.intro .btn-beige:hover{
+    background-color: var(--dark-green);
 }
 
 .navbar-brand:hover {
@@ -29,26 +32,21 @@ html {
     --d: 90%;
 }
 
-.logo {
+
+.highlighted-text { 
+    text-shadow: 4px 3px 0px var(--beige), 9px 8px 0px rgba(0,0,0,0.15); 
+}
+
+.title {
+    font-size: 5em;
+}
+.sentence {
+    font-size: 3em;
+}
+
+.insegnanti {
     
 }
-
-/* Contenitore con immagine principale */
-.intro-slide {
-    background: 
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-        url("../img/index-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:scroll;
-    background-size: cover;
-
-    min-height: 50vh; 
-    min-width: 50vw;
-
-    min-height: 100vh;
-}
-
-.introduzione {
-    height: 600px;
+.insegnanti .card-dimension {
+    width: 18rem;
 }
