@@ -1,9 +1,7 @@
 
 :root {
     /* Original Palette */
-    --dark-green: #4a7c59;
-    --greensea: #8fc0a9;
-    --light-blue: #68b0ab;
+    --dark-green: rgb(40, 113, 81);
     --beige: #c8d5b9;
     --selection-color: #06bce14d;
 
@@ -21,36 +19,26 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.text-beige {
-    color: var(--beige);
-}
+
 .text-dark-green {
     color: var(--dark-green);
+}
+.t-white {
+    color: white;
 }
 
 .bg-dark-green{
     background-color: var(--dark-green);
 }
-.bg-greensea{
-    background-color: var(--greensea);
-}
-.bg-light-blue{
-    background-color: var(--light-blue);
-}
-.bg-beige{
-    background-color: var(--beige);
-}
 
-.btn-beige {
-    background-color: var(--beige);
+.btn-dark-green {
+    color: #fff;
+    background-color: var(--dark-green);
 }
-.btn-beige:hover {
-    color: var(--beige);
-    border: 1px solid var(--beige);
-}
-
-.border-beige {
-    border: 1px solid var(--beige);
+.btn-dark-green:hover {
+    color: var(--dark-green);
+    border: 1px solid var(--dark-green);
+    background-color: #fff;
 }
 
 

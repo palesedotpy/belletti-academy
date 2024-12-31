@@ -1,22 +1,21 @@
-
 html {
     scroll-behavior: smooth;
 }
 
+.bg-img {
+    background-image: url("../img/b.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255, 0.6);
+    background-blend-mode: lighten;
+}
 
 .account-container > .btn-beige:hover {
     color: var(--beige);
     border: 1px solid var(--beige);
 }
-.intro .btn-beige:hover{
-    background-color: var(--dark-green);
-}
-
 .navbar-brand:hover {
-    color: var(--beige);
-}
-.navbar-brand:focus {
-    color: var(--beige);
+    color: var(--dark-green);
 }
 
 /* Sottolineamento dinamico dei link */
@@ -28,11 +27,9 @@ html {
     transition:0.5s;
   }
 .nav-link-header:hover {
-    color: var(--beige); 
+    color: var(--dark-green); 
     --d: 90%;
 }
-
-
 .highlighted-text { 
     text-shadow: 4px 3px 0px var(--beige), 9px 8px 0px rgba(0,0,0,0.15); 
 }
@@ -40,8 +37,9 @@ html {
 .title {
     font-size: 5em;
 }
-.sentence {
-    font-size: 3em;
+
+.contatti {
+    padding: 10vh 0;
 }
 
 .insegnanti {
